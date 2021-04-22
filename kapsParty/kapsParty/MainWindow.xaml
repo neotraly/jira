@@ -1,0 +1,20 @@
+﻿<Window x:Class="kapsParty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kapsParty"
+        mc:Ignorable="d"
+        Title="HolidayApp" Height="450" Width="800">
+    <Grid>
+        <ComboBox Name="Holidays" HorizontalAlignment="Left" Margin="354,124,0,0" VerticalAlignment="Top" Width="190" Height="20" FontFamily="Bahnschrift Light" FontSize="14" SelectionChanged="Holidays_SelectionChanged"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Margin="81,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="20" FontFamily="Bahnschrift Light" FontSize="14" TextChanged="Name_TextChanged"/>
+        <TextBox Name="Output" HorizontalAlignment="Left" Margin="81,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="463" Height="197" FontSize="16"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="81,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Праздник:" HorizontalAlignment="Left" Margin="354,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Почта:" HorizontalAlignment="Left" Margin="605,249,0,0" VerticalAlignment="Top"/>
+        <Button Content="Отправить" HorizontalAlignment="Left" Margin="606,308,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click"/>
+        <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="606,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <Label Content="Для:" HorizontalAlignment="Left" Margin="567,278,0,0" VerticalAlignment="Top" Height="32"/>
+    </Grid>
+</Window>

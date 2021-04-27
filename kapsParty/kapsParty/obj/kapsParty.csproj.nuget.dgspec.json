@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denis\\jira\\kapsParty\\kapsParty\\kapsParty.csproj": {}
+    "D:\\Колледж\\kaps\\jira\\kapsParty\\kapsParty\\kapsParty.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denis\\jira\\kapsParty\\kapsParty\\kapsParty.csproj": {
+    "D:\\Колледж\\kaps\\jira\\kapsParty\\kapsParty\\kapsParty.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denis\\jira\\kapsParty\\kapsParty\\kapsParty.csproj",
+        "projectUniqueName": "D:\\Колледж\\kaps\\jira\\kapsParty\\kapsParty\\kapsParty.csproj",
         "projectName": "kapsParty",
-        "projectPath": "C:\\Users\\denis\\jira\\kapsParty\\kapsParty\\kapsParty.csproj",
-        "packagesPath": "C:\\Users\\denis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denis\\jira\\kapsParty\\kapsParty\\obj\\",
+        "projectPath": "D:\\Колледж\\kaps\\jira\\kapsParty\\kapsParty\\kapsParty.csproj",
+        "packagesPath": "C:\\Users\\vadzh\\.nuget\\packages\\",
+        "outputPath": "D:\\Колледж\\kaps\\jira\\kapsParty\\kapsParty\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vadzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

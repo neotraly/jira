@@ -2,6 +2,8 @@
 using System.Net.Mail;
 using System.Net;
 using System.Threading.Tasks;
+using System.Linq;
+using System;
 
 namespace kapsParty
 {
@@ -10,10 +12,15 @@ namespace kapsParty
     /// </summary>
     public partial class MainWindow : Window
     {
-        string[] holidays = new string[]{"День рождения","Пасха","Рождество","Новый год", "23 февраля", "8 марта", "День варенья", "День пельменей", "День матери", "День учителя", "9 мая"};
+        Random rnd = new Random();
+        string[] holidays = new string[]{"День рождения","Пасха","Рождество","Новый год", "23 февраля", "8 марта",
+            "День варенья", "День пельменей", "День матери", "День учителя", "9 мая"};
+        string[] congrats = new string[] { "счастья", "здоровья", "удачи","успехов"};
         string congratulation = string.Empty;
         string name = string.Empty;
         string holiday = string.Empty;
+        int count = 3;
+        string[] words;
 
         public MainWindow()
         {
@@ -28,7 +35,7 @@ namespace kapsParty
         }
         private void TextChange()
         {
-            Output.Text = $"{name} с праздником {holiday}!";
+            Output.Text = $"{name} с праздником {holiday} и {string.Join(", ", words.ToArray())} вам!";
         }
 
         private void Name_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
@@ -76,6 +83,33 @@ namespace kapsParty
                 });
                 Mailto.Text = "";
             }
+        }
+
+        private void Count_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            if (int.TryParse(Count.Text, out int result))
+            {
+                count = result;
+                if (count <= 0)
+                {
+                    MessageBox.Show("Вы ввели неправильное число качеств");
+                    count = 3;
+                    Count.Text = 3.ToString();
+                }
+                if (count > congrats.Length)
+                {
+                    MessageBox.Show("Вы ввели неправильное число качеств");
+                    Count.Text = congrats.Length.ToString();
+                    count = congrats.Length;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Вы ввели неправильное число качеств");
+                Count.Text = 3.ToString();
+            }
+            words = congrats.OrderBy(x => rnd.Next()).Take(count).ToArray();
+            TextChange();
         }
     }
 }

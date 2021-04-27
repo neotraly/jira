@@ -16,5 +16,7 @@
         <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="119,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <Label Content="Укажите почту:" HorizontalAlignment="Left" Margin="19,237,0,0" VerticalAlignment="Top" Height="25" FontFamily="Arial"/>
         <Label Content="Поздравьте своих родных и близких с праздником!" HorizontalAlignment="Left" Margin="111,24,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="119,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="20" TextChanged="Count_TextChanged"/>
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="19,158,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

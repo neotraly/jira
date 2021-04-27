@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\denis\jira\kapsParty\kapsParty\obj\Debug\netcoreapp3.1\
+D:\Колледж\kaps\jira\kapsParty\kapsParty\obj\Debug\netcoreapp3.1\
 kapsParty
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\denis\jira\kapsParty\kapsParty\App.xaml
+D:\Колледж\kaps\jira\kapsParty\kapsParty\App.xaml
 11407045341
 
 5-1669878522
 192-1533232326
 MainWindow.xaml;
 
-False
+True
 

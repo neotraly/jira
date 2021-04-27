@@ -10,7 +10,7 @@ namespace kapsParty
     /// </summary>
     public partial class MainWindow : Window
     {
-        string[] holidays = new string[4]{"День рождения","Пасха","Рождество","Новый год"};
+        string[] holidays = new string[]{"День рождения","Пасха","Рождество","Новый год", "23 февраля", "8 марта", "День варенья", "День пельменей", "День матери", "День учителя", "9 мая"};
         string congratulation = string.Empty;
         string name = string.Empty;
         string holiday = string.Empty;
@@ -62,7 +62,7 @@ namespace kapsParty
                                 smtp.Host = "smtp.gmail.com";
                                 smtp.Credentials = new NetworkCredential(from.Address, "congratulations");
                                 smtp.Port = 587;
-                                smtp.EnableSsl = false;
+                                smtp.EnableSsl = true;
 
                                 smtp.Send(mailMessage);
                                 MessageBox.Show("Письмо отправлено!");
@@ -74,6 +74,7 @@ namespace kapsParty
                         }
                     }
                 });
+                Mailto.Text = "";
             }
         }
     }

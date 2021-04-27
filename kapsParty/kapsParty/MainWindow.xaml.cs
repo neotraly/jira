@@ -26,6 +26,7 @@ namespace kapsParty
         {
             InitializeComponent();
             Holidays.ItemsSource = holidays;
+            words = congrats.OrderBy(x => rnd.Next()).Take(count).ToArray();
         }
 
         private void Holidays_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -35,7 +36,7 @@ namespace kapsParty
         }
         private void TextChange()
         {
-            Output.Text = $"{name} с праздником {holiday} и {string.Join(", ", words.ToArray())} вам!";
+            Output.Text = $"{name} с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
         }
 
         private void Name_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
@@ -46,6 +47,10 @@ namespace kapsParty
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(Count.Text))
+            {
+                return;
+            }
             if (string.IsNullOrEmpty(Mailto.Text))
             {
                 MessageBox.Show("Нужно ввести адрес электронной почты");

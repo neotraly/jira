@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kapsParty"
         mc:Ignorable="d"
-        Title="HolidayApp" Height="339" Width="789">
+        Title="HolidayApp" Height="339" Width="789" Icon="/icon.png">
     <Grid Cursor="" Background="#FFF76B6B" Margin="0,0,0,1">
         <ComboBox Name="Holidays" HorizontalAlignment="Left" Margin="119,189,0,0" VerticalAlignment="Top" Width="145" Height="20" FontFamily="Bahnschrift Light" FontSize="14" SelectionChanged="Holidays_SelectionChanged"/>
         <TextBox Name="Name" HorizontalAlignment="Left" Margin="119,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="20" FontFamily="Bahnschrift Light" FontSize="14" TextChanged="Name_TextChanged"/>

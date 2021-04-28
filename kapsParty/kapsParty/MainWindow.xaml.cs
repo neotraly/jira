@@ -49,7 +49,7 @@ namespace kapsParty
         {
             if (string.IsNullOrEmpty(Mailto.Text))
             {
-                MessageBox.Show("Нужно ввести адрес электронной почтыs");
+                MessageBox.Show("Нужно ввести адрес электронной почты");
             }
             else
             {

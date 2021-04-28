@@ -5,18 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kapsParty"
         mc:Ignorable="d"
-        Title="HolidayApp" Height="339" Width="789" Icon="/icon.png">
-    <Grid Cursor="" Background="#FFF76B6B" Margin="0,0,0,1">
-        <ComboBox Name="Holidays" HorizontalAlignment="Left" Margin="119,189,0,0" VerticalAlignment="Top" Width="145" Height="20" FontFamily="Bahnschrift Light" FontSize="14" SelectionChanged="Holidays_SelectionChanged"/>
-        <TextBox Name="Name" HorizontalAlignment="Left" Margin="119,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="20" FontFamily="Bahnschrift Light" FontSize="14" TextChanged="Name_TextChanged"/>
-        <TextBox Name="Output" HorizontalAlignment="Left" Margin="290,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="463" Height="166" FontSize="16"/>
-        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="19,117,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-        <Label Content="Праздник:" HorizontalAlignment="Left" Margin="19,185,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-        <Button Content="Отправить" HorizontalAlignment="Left" Margin="119,264,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click" Background="#FF58CEDA"/>
-        <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="119,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <Label Content="Укажите почту:" HorizontalAlignment="Left" Margin="19,237,0,0" VerticalAlignment="Top" Height="25" FontFamily="Arial"/>
-        <Label Content="Поздравьте своих родных и близких с праздником!" HorizontalAlignment="Left" Margin="111,24,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
-        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="119,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="20" TextChanged="Count_TextChanged"/>
-        <Label Content="Количество:" HorizontalAlignment="Left" Margin="19,158,0,0" VerticalAlignment="Top"/>
+        WindowStartupLocation="CenterOwner"
+        Title="HolidayApp" Height="382" Width="813" Icon="/icon.png" ResizeMode="NoResize" Background="#FF5B0B0B" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Cursor="" Margin="0,0,0,1">
+        <Grid.Background>
+            <ImageBrush ImageSource="/backgrond.jpg"/>
+        </Grid.Background>
+        <ComboBox Name="Holidays" HorizontalAlignment="Left" Margin="119,221,0,0" VerticalAlignment="Top" Width="192" Height="20" FontFamily="Bahnschrift Light" FontSize="14" SelectionChanged="Holidays_SelectionChanged"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Margin="119,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="20" FontFamily="Bahnschrift Light" FontSize="14" TextChanged="Name_TextChanged"/>
+        <TextBox Name="Output" HorizontalAlignment="Left" Margin="316,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="463" Height="166" FontSize="16" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="19,117,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1"/>
+        <Label Content="Праздник:" HorizontalAlignment="Left" Margin="19,217,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1"/>
+        <Button Content="Отправить" HorizontalAlignment="Left" Margin="316,311,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click" Background="Black" Foreground="White"/>
+        <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="119,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Укажите почту:" HorizontalAlignment="Left" Margin="19,262,0,0" VerticalAlignment="Top" Height="25" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1"/>
+        <Label Content="Поздравьте своих родных и близких с праздником!" HorizontalAlignment="Left" Margin="111,24,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" BorderThickness="1,1,1,1" Foreground="White"/>
+        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="119,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="20" TextChanged="Count_TextChanged"/>
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="19,161,0,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1,1,1,1"/>
     </Grid>
 </Window>

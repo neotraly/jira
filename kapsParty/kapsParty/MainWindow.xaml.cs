@@ -15,7 +15,7 @@ namespace kapsParty
         Random rnd = new Random();
         string[] holidays = new string[]{"День рождения","Пасха","Рождество","Новый год", "23 февраля", "8 марта",
             "День варенья", "День пельменей", "День матери", "День учителя", "9 мая"};
-        string[] congrats = new string[] { "счастья", "здоровья", "удачи","успехов"};
+        string[] congrats = new string[] { "счастья", "здоровья", "удачи","успехов","много сил", "новых впечатлений", "денег", "благополучия"};
         string congratulation = string.Empty;
         string name = string.Empty;
         string holiday = string.Empty;
@@ -36,7 +36,7 @@ namespace kapsParty
         }
         private void TextChange()
         {
-            Output.Text = $"{name} с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
+            Output.Text = $"Уважаемый {name} с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
         }
 
         private void Name_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)

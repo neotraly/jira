@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="backgrond.jpg" />
     <None Remove="icon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="backgrond.jpg" />
     <Resource Include="icon.png" />
   </ItemGroup>
 

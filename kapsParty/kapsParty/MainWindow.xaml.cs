@@ -27,6 +27,8 @@ namespace kapsParty
             InitializeComponent();
             Holidays.ItemsSource = holidays;
             words = congrats.OrderBy(x => rnd.Next()).Take(count).ToArray();
+            Holidays.SelectedIndex = 0;
+            Count.Text = 3.ToString();
         }
 
         private void Holidays_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -50,6 +52,7 @@ namespace kapsParty
             if (string.IsNullOrEmpty(Mailto.Text))
             {
                 MessageBox.Show("Нужно ввести адрес электронной почты");
+                return;
             }
             else
             {

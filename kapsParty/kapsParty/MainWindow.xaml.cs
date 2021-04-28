@@ -47,20 +47,26 @@ namespace kapsParty
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Count.Text))
-            {
-                return;
-            }
             if (string.IsNullOrEmpty(Mailto.Text))
             {
                 MessageBox.Show("Нужно ввести адрес электронной почты");
             }
             else
             {
-                MailAddress from = new MailAddress("shcongrats@gmail.com", "Поздравитель");
-                MailAddress to = new MailAddress(Mailto.Text, name);
+                MailAddress from;
+                MailAddress to;
                 string message = Output.Text;
 
+                try
+                {
+                    from = new MailAddress("shcongrats@gmail.com", "Поздравитель");
+                    to = new MailAddress(Mailto.Text, name);
+                }
+                catch
+                {
+                    MessageBox.Show("Произошла ошибка с отправкой почты");
+                    return;
+                }
                 await Task.Run(() =>
                 {
                     using (MailMessage mailMessage = new MailMessage(from, to))
@@ -92,6 +98,10 @@ namespace kapsParty
 
         private void Count_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
+            if (string.IsNullOrEmpty(Count.Text))
+            {
+                return;
+            }
             if (int.TryParse(Count.Text, out int result))
             {
                 count = result;

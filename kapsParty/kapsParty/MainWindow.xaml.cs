@@ -38,7 +38,7 @@ namespace kapsParty
         }
         private void TextChange()
         {
-            Output.Text = $"Уважаемый {name} с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
+            Output.Text = $"Уважаемый(-ая), {name} с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
         }
 
         private void Name_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
@@ -68,6 +68,7 @@ namespace kapsParty
                 catch
                 {
                     MessageBox.Show("Произошла ошибка с отправкой почты");
+                    Mailto.Text = "";
                     return;
                 }
                 await Task.Run(() =>

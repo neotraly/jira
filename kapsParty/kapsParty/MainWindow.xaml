@@ -12,15 +12,15 @@
             <ImageBrush ImageSource="/backgrond.jpg"/>
         </Grid.Background>
         <ComboBox Name="Holidays" HorizontalAlignment="Left" Margin="266,170,0,0" VerticalAlignment="Top" Width="192" Height="26" FontFamily="Bahnschrift Light" FontSize="14" SelectionChanged="Holidays_SelectionChanged"/>
-        <TextBox Name="Name" HorizontalAlignment="Left" Margin="266,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="26" FontFamily="Bahnschrift Light" FontSize="14" TextChanged="Name_TextChanged" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Margin="266,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="26" FontFamily="Bahnschrift Light" FontSize="18" TextChanged="Name_TextChanged" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"/>
         <TextBox Name="Output" HorizontalAlignment="Left" Margin="520,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="241" FontSize="16" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
         <Label Content="Получатель:" HorizontalAlignment="Left" Margin="20,66,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1" Foreground="Black" FontSize="18"/>
         <Label Content="Праздник:" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1" FontSize="18"/>
         <Button Content="Отправить" HorizontalAlignment="Left" Margin="270,274,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click" Background="#FFAC0808" Foreground="White" Height="33" BorderBrush="White" FontSize="14"/>
-        <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="266,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="24" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
+        <TextBox Name="Mailto" HorizontalAlignment="Left" Margin="266,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="26" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" FontSize="18"/>
         <Label Content="Укажите почту:" HorizontalAlignment="Left" Margin="22,225,0,0" VerticalAlignment="Top" Height="36" FontFamily="Arial" FontWeight="Bold" BorderThickness="1,1,1,1" FontSize="18"/>
         <Label Content="Поздравьте своих родных и близких с праздником!" HorizontalAlignment="Left" Margin="327,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" BorderThickness="1,1,1,1" Foreground="White" Background="#FFAC0808"/>
-        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="266,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="26" TextChanged="Count_TextChanged"/>
+        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="266,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="26" TextChanged="Count_TextChanged" FontSize="18"/>
         <Label Content="Количество пожеланий:" HorizontalAlignment="Left" Margin="20,106,0,0" VerticalAlignment="Top" FontWeight="Bold" BorderThickness="1,1,1,1" FontSize="18" Height="42"/>
     </Grid>
 </Window>

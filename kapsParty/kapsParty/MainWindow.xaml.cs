@@ -38,7 +38,7 @@ namespace kapsParty
         }
         private void TextChange()
         {
-            Output.Text = $"Уважаемый(-ая) {name}, с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
+            Output.Text = $"Уважаемый(-ая), {name}, с праздником {holiday}! Желаю {string.Join(", ", words.ToArray())} вам!";
         }
 
         private void Name_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
